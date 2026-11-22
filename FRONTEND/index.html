@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El link del Lector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabecera principal -->
+    <header class="header">
+        <div class="contenedor">
+            <h1>📚 El link del Lector</h1>
+            <h2>Descubre tu próxima lectura favorita</h2>
+            
+            <!-- Búsqueda y filtros agrupados -->
+            <div class="controles">
+                <input type="search" id="buscador" placeholder="Buscar por título o autor..." />
+                
+                <select id="filtro-genero">
+                    <option value="todos">Todos los géneros</option>
+                    <option value="Ciencia Ficción">Ciencia Ficción</option>
+                    <option value="Fantasía">Fantasía</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Ensayo">Ensayo</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="contenedor">
+        <section id="lista-libros" class="grid-libros">
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="contenedor">
+            <p>Luisana A González. <br> Entorno de desarollo.
+                <br> Frontend + Node.js/Express</p>
+        </div>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
